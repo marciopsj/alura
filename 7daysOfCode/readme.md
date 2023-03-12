@@ -10,12 +10,13 @@ Desafios para aprender como usar a linguagem mais popular do mundo para criar al
 ## Desafios
 
 - [Lógica JS 1/7: Operações Booleanas](#dayOne)
-- [Lógica JS 2/7: 👩🏽‍💻 Variáveis](#dayTwo)
+- [Lógica JS 2/7: Variáveis](#dayTwo)
+- [Lógica JS 3/7: Fluxo de decisão](#dayThree)
 ---
 
 <h1 id="dayOne">Lógica JS 1/7: Operações Booleanas</h1>
 
-![progressbar](/assets/images/d1Bar.png)
+<img src="./assets/images/d1Bar.png">
 
 
 O primeiro dia é crucial para aprender sobre tipos de variáveis em JavaScript. 
@@ -68,9 +69,9 @@ Artigo da Alura para aprender [mais sobre operadores de comparação](https://ca
 
 ---
 
-<h1 id="dayTwo">Lógica JS 2/7: 👩🏽‍💻 Variáveis</h1>
+<h1 id="dayTwo">Lógica JS 2/7: Variáveis</h1>
 
-![progressbar](/assets/images/d2Bar.png)
+<img src="./assets/images/d2Bar.png">
 
 No desafio de hoje, o objetivo é personalizar a experiência do usuário em um sistema, site ou aplicativo, capturando e armazenando valores dentro de variáveis.
 
@@ -118,6 +119,71 @@ alert(msg);
 
 Teste os códigos acima e tente adaptá-los ao seu programa!
 
+---
+<h1 id="dayThree">Lógica JS 3/7: Fluxo de decisão</h1>
+
+<img src="./assets/images/d3Bar.png">
+
+Seu desafio de hoje é criar os destinos possíveis de um jogo, em que o usuário consiga escolher:
+
+1. Se quer seguir para área de Front-End ou seguir para a área de Back-End.
+
+2. Caso esteja na área de Front-End, se quer aprender React ou aprender Vue. Caso esteja na área de Back-End, poderá aprender C# ou aprender Java.
+
+3. Depois, independente das escolhas anteriores, o usuário poderá escolher entre seguir se especializando na área escolhida ou seguir se desenvolvendo para se tornar Fullstack. Você deve exibir na tela uma mensagem específica para cada escolha.
+
+4. Por fim, pergunte quais são as tecnologias nas quais a pessoa gostaria de se especializar ou de conhecer. Aqui, a pessoa pode responder N tecnologias, uma de cada vez. Então, enquanto ela continuar respondendo ok para a pergunta: "Tem mais alguma tecnologia que você gostaria de aprender?", continue apresentando para ela o Prompt, para que ela complete o nome da tecnologia em questão. E, logo depois, apresente uma mensagem comentando algo sobre a linguagem inserida.
+
+O importante é que a pessoa que estiver jogando possa sempre escolher qual decisão tomar para conseguir aprender e se desenvolver na área de programação.
+
+Além disso, também é essencial que, ao final do jogo, ela possa inserir quantas tecnologias quiser na lista de aprendizado.
+
+## Extra
+
+Você já viu estruturas condicionais em Javascript anteriormente, mas vou recapitular. O if é usado para verificar se uma determinada condição é verdadeira.
+
+Exemplo:
+
+```javascript
+if (cidade === "Roma"){
+    // mostre a foto do "Coliseu"
+}
+```
+
+Além disso, ele também pode ser usado com um ou vários else if, que irá saber que a condição anterior era falsa e vai verificar se a atual é verdadeira.
+
+Por fim, existe o else sozinho, sem nenhuma condição, e o código dentro dele será executado sempre que todas as condições encadeadas anteriormente forem falsas.
+
+```javascript
+if (cidade === "Roma"){
+    // mostre a foto do "Coliseu"
+}
+else if (cidade === "Paris"){
+    // mostre a foto do "Torre Eiffel"
+}
+else {
+    // dê a resposta "Você não digitou nenhuma cidade válida"
+}
+```
+
+Além disso, para a parte 4, você precisará de uma estrutura de repetição (loop) como o while. Para usá-lo, é bem fácil:
+
+```javascript
+let idade = 0;
+
+while (idade < 8) {
+    // algum comando para imprimir a idade
+    idade = idade + 1;
+}
+```
+
+Esse código começará com a idade em zero e, ao entrar no while, esse valor será impresso e, logo depois, incrementado em 1.
+
+Ou seja, depois da primeira vez que ele passar, o valor da idade será igual a 1, que é menor que 8, e por isso, a condição do while terá um resultado verdadeiro e ele continuará a ser executado.
+
+Ele só vai parar quando o valor da variável idade chegar a 8, que não é menor que 8, e por isso a condição do while terá um resultado falso.
+
+Você também pode aprender mais sobre o while [nesse site](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/while?utm_source=ActiveCampaign&utm_medium=email&utm_content=%237DaysOfCode+-+L%C3%B3gica+JS+3%2F7%3A+Fluxo+de+decis%C3%A3o&utm_campaign=%5BALURA+%237days+Of+Code%5D+%28L%C3%B3gica+de+Programa%C3%A7%C3%A3o+-+JavaScript%29+Dia+3%3A+Fluxo+de+decis%C3%A3o).
 
 ---
 
