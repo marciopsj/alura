@@ -12,6 +12,7 @@ Desafios para aprender como usar a linguagem mais popular do mundo para criar al
 - [Lógica JS 1/7: Operações Booleanas](#dayOne)
 - [Lógica JS 2/7: Variáveis](#dayTwo)
 - [Lógica JS 3/7: Fluxo de decisão](#dayThree)
+- [Lógica JS 4/7: Mais loops e randomização](#dayFour)
 ---
 
 <h1 id="dayOne">Lógica JS 1/7: Operações Booleanas</h1>
@@ -184,6 +185,38 @@ Ou seja, depois da primeira vez que ele passar, o valor da idade será igual a 1
 Ele só vai parar quando o valor da variável idade chegar a 8, que não é menor que 8, e por isso a condição do while terá um resultado falso.
 
 Você também pode aprender mais sobre o while [nesse site](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/while?utm_source=ActiveCampaign&utm_medium=email&utm_content=%237DaysOfCode+-+L%C3%B3gica+JS+3%2F7%3A+Fluxo+de+decis%C3%A3o&utm_campaign=%5BALURA+%237days+Of+Code%5D+%28L%C3%B3gica+de+Programa%C3%A7%C3%A3o+-+JavaScript%29+Dia+3%3A+Fluxo+de+decis%C3%A3o).
+
+---
+
+<h1 id="dayFour">Lógica JS 4/7: Mais loops e randomização</h1>
+
+<img src="./assets/images/d4Bar.png">
+
+Você já brincou de tentar adivinhar o número que seu amigo ou amiga estava pensando? Hoje você vai voltar na infância e fazer exatamente isso. Mas agora, o jogo vai ser contra o próprio computador!
+
+Você deve criar um programinha que comece com um valor específico pré-definido entre 0 a 10 para o número que você vai adivinhar (7, por exemplo).
+
+Em seguida, o programa vai perguntar para você qual o valor que você deseja chutar e, caso você acerte, ele irá te parabenizar. Caso erre, ele vai te dar mais 2 tentativas.
+
+No fim, caso você não acerte nenhuma vez, ele vai imprimir qual era o número inicial.
+
+Depois que o programinha estiver funcionando, tente usar um número randômico em vez de um número pré-definido.
+
+## Extra
+
+Dê uma olhada nesse site para [aprender mais sobre estruturas de repetição](https://caelum57945.lt.acemlnb.com/Prod/link-tracker?redirectUrl=aHR0cHMlM0ElMkYlMkZkZXZlbG9wZXIubW96aWxsYS5vcmclMkZwdC1CUiUyRmRvY3MlMkZXZWIlMkZKYXZhU2NyaXB0JTJGR3VpZGUlMkZMb29wc19hbmRfaXRlcmF0aW9uJTNGdXRtX3NvdXJjZSUzREFjdGl2ZUNhbXBhaWduJTI2dXRtX21lZGl1bSUzRGVtYWlsJTI2dXRtX2NvbnRlbnQlM0QlMjUyMzdEYXlzT2ZDb2RlJTJCLSUyQkwlMjVDMyUyNUIzZ2ljYSUyQkpTJTJCNCUyNTJGNyUyNTNBJTJCJTI1RjAlMjU5RiUyNTkxJTI1QTklMjVGMCUyNTlGJTI1OEYlMjVCRCUyNUUyJTI1ODAlMjU4RCUyNUYwJTI1OUYlMjU5MiUyNUJCJTJCTWFpcyUyQmxvb3BzJTJCZSUyQnJhbmRvbWl6YSUyNUMzJTI1QTclMjVDMyUyNUEzbyUyNnV0bV9jYW1wYWlnbiUzRCUyNTVCQUxVUkElMkIlMjUyMzdkYXlzJTJCT2YlMkJDb2RlJTI1NUQlMkIlMjUyOEwlMjVDMyUyNUIzZ2ljYSUyQmRlJTJCUHJvZ3JhbWElMjVDMyUyNUE3JTI1QzMlMjVBM28lMkItJTJCSmF2YVNjcmlwdCUyNTI5JTJCRGlhJTJCNCUyNTNBJTJCTWFpcyUyQmxvb3BzJTJCZSUyQnJhbmRvbWl6YSUyNUMzJTI1QTclMjVDMyUyNUEzbw==&sig=3be6sycGuw2G9iggbcFvm15mrVMgV85psTHazMHn76ye&iat=1678532742&a=%7C%7C476258007%7C%7C&account=caelum57945%2Eactivehosted%2Ecom&email=%2FCdXY8lmhBspSoHR46VIG8uaTqweP9skmHguw1qgt2enTfH%2F3Q4%3D%3Az%2B0COa%2BkgzMDtnI%2FzbxuOnX7xV7Zhf5E&s=5f337af7c35d42cf0d2faea5cb54d25f&i=1266A7839A166A8688).
+
+Para fazer a própria máquina escolher sozinha o número a ser adivinhado, você pode utilizar algo chamado Math.random().
+
+Para isso, utilize o código:
+
+```javascript
+Math.floor(Math.random() * (máximo - mínimo + 1) + mínimo)
+```
+
+Onde, claro, você terá que alterar os valores de mínimo e máximo pelos limites inferior e superior, respectivamente.
+
+Você pode ler mais sobre a <code>Math.random()</code> [nesse site](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math/random?utm_source=ActiveCampaign&utm_medium=email&utm_content=%237DaysOfCode+-+L%C3%B3gica+JS+4%2F7%3A+%F0%9F%91%A9%F0%9F%8F%BD%E2%80%8D%F0%9F%92%BB+Mais+loops+e+randomiza%C3%A7%C3%A3o&utm_campaign=%5BALURA+%237days+Of+Code%5D+%28L%C3%B3gica+de+Programa%C3%A7%C3%A3o+-+JavaScript%29+Dia+4%3A+Mais+loops+e+randomiza%C3%A7%C3%A3o).
 
 ---
 
