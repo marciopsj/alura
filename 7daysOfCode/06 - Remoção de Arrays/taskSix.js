@@ -58,7 +58,7 @@ const removeItem = () => {
 }
 
 (function () {
-    let msg = prompt("Deseja incluir um item na sua lista de compras? 1-Sim | 2-Não >");    
+    let msg = prompt("Deseja incluir um item na sua lista de compras? 1-Sim | 2-Não >");        
     while (msg == 1 || msg == 3) {
         if (msg == 1) {
             foodList();
